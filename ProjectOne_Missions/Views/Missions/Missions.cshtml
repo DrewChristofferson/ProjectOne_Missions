@@ -1,0 +1,63 @@
+﻿@model ProjectOne_Missions.Models.Missions
+
+@{
+    ViewBag.Title = "MissionFAQ";
+}
+<div style="padding-top:10px;">
+    <h2>@Html.DisplayFor(model => model.MissionName)</h2>
+</div>
+<hr />
+<div style="float:left; margin-right:15%; width:40%;">
+    <h3>Mission Information</h3>
+    <br />
+    <div >
+        <dl class="dl-horizontal">
+            <dt>
+                @Html.DisplayNameFor(model => model.PresLastName)
+            </dt>
+            <dd>
+                @Html.DisplayFor(model => model.PresLastName)
+            </dd>
+            <dt>
+                @Html.DisplayNameFor(model => model.MissionAddress)
+            </dt>
+            <dd>
+                @Html.DisplayFor(model => model.MissionAddress)
+            </dd>
+            <dt>
+                @Html.DisplayNameFor(model => model.Language)
+            </dt>
+            <dd>
+                @Html.DisplayFor(model => model.Language)
+            </dd>
+            <dt>
+                @Html.DisplayNameFor(model => model.Climate)
+            </dt>
+            <dd>
+                @Html.DisplayFor(model => model.Climate)
+            </dd>
+            <dt>
+                @Html.DisplayNameFor(model => model.DomReligion)
+            </dt>
+            <dd>
+                @Html.DisplayFor(model => model.DomReligion)
+            </dd>
+
+        </dl>
+    </div>
+    <div style="display:inline; width:100px">
+        <img width="400" height="242" src="~/Content/Images/@Html.DisplayFor(model => model.Flag)"  />
+    </div>
+    <br />
+    <br />
+    <p>
+        @Html.ActionLink("Back to List", "Index")
+    </p>
+</div>
+<div style="float:left; margin-right:5%; display:inline; width:40%;">
+    <h3>FAQs</h3>
+    @Html.ActionLink("Frequently Asked Questions", "Index", "MissionQuestions")
+    <br />
+
+    
+</div>
