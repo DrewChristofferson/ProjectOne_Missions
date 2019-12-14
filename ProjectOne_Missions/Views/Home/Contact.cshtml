@@ -1,0 +1,56 @@
+﻿
+@{
+    ViewBag.Title = "Contact";
+}
+
+
+<br /><br />
+
+<div style="width:40%; float:left;">
+    <img src="~/Content/Images/ContactUs.png" style="display:block;" />
+    <br />
+    <form style="padding-left:20px;">
+
+        <span style="font-size:20px; font-weight:bold;">Contact Form</span><br /><br />
+        <table>
+            <tr>
+                <td><label for="FirstName">First Name:</label>&nbsp;</td>
+                <td><input type="text" id="FirstName" /></td>
+            </tr>
+            <tr>
+                <td><label for="LastName"> Last Name:</label> &nbsp;</td>
+                <td><input type="text" id="LastName" /></td>
+            </tr>
+            <tr>
+                <td><label for="Email"> Email:</label>&nbsp;</td>
+                <td><input type="email" id="Email" /></td>
+            </tr>
+            <tr>
+                <td><label for="Subject">Subject:</label>&nbsp;</td>
+                <td>
+                    <select id="Subject">
+                        <option value="Technical">Technical Questions</option>
+                        <option value="Stupid">Stupid Questions</option>
+                        <option value="Mom">Mom Questions</option>
+                        <option value="Weather">Weather Questions</option>
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                <td><label for="Message">Message:</label>&nbsp;</td>
+                <td><textarea id="Message"></textarea></td>
+            </tr>
+           
+            <tr><td><input type="submit" class="btn btn-primary btn-group-lg" /></td></tr>
+        </table>
+
+    </form>
+</div>
+<!---<div style="float:left; width:30%;">
+    <br />
+    <div class="list-group">
+        <div class="list-group-item-text"><p><strong>Phone Number:</strong> (801) 264-9546</p></div>
+        <div class="list-group-item-text"><p><strong>Email:</strong> MissionHQ@hemail.com</p></div>
+        <div class="list-group-item-text"><p><strong>Address:</strong> 1830 W Kolob Ave</p></div>
+    </div>
+</div>-->

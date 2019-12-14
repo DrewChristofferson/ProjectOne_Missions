@@ -1,0 +1,21 @@
+﻿@model ProjectOne_Missions.Models.Missions
+
+@{
+    ViewBag.Title = "Index";
+}
+
+@using (Html.BeginForm())
+{
+<div class="jumbotron">
+    <h3>Choose a Mission</h3>
+    <div>
+        @Html.DropDownListFor(model => model.MissionID, new SelectList(ViewBag.Missions, "MissionID", "MissionName"), "---- Select Mission ----")
+
+    </div>
+    <div>
+        <input type="submit" class="btn btn-success btn-group-lg" value="Go" />
+    </div>
+</div>
+}
+
+<img src="~/Content/Images/world-map.gif" />
